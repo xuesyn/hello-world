@@ -1,5 +1,18 @@
-//输入整数，将每位数字打印出来（从左向右打印，空格区分）
-//2018/11/14 更新
-int main() {
-    //to do sth
+#include<stdio.h>
+int main()
+{
+	long i,j,n;
+    scanf("%ld",&n);
+    int a[100000];
+    i=1;
+    while(n!=0)
+    { 
+	    a[i]=n%10;
+	    n=n/10;
+		i=i+1;    
 }
+    for (j=i-1;j>=1;j=j-1)
+        printf("%ld ",a[j]);
+    return 0;
+}
+
